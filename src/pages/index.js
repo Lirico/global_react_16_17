@@ -1,4 +1,7 @@
-import Navigation from "@/components/Navigation";
+
+import Boton from "@/components/clase_02/Boton";
+import Seccion from "@/components/clase_02/Seccion";
+import Head from "next/head";
 
 
 
@@ -6,8 +9,8 @@ import Navigation from "@/components/Navigation";
 export default function Home() {
   return (
     <>
-      <Navigation />
-      <h1>Hola desde Home</h1>
+      <Seccion />
+      <Boton bgColor="gold" texto="Login" width="100px" scale="0.8" />
     </>
   );
 }
