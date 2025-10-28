@@ -1,19 +1,20 @@
 
 
-
-import Contador from "@/components/clase_05/Contador";
-import Contador2 from "@/components/clase_05/Contador2";
+import Footer from "@/components/clase_06/Footer";
+import Header from "@/components/clase_06/Header";
+import Main from "@/components/clase_06/Main";
+import ThemeContextProvider from "@/context/ThemeContextProvider";
 
 
 
 export default function Home() {
   return (
     <>
-      <Contador />
-      <br />
-      <hr />
-      <br />
-      <Contador2/>
+     <ThemeContextProvider>
+        <Header />
+        <Main />
+        <Footer />
+     </ThemeContextProvider>
     </>
   );
 }
