@@ -1,7 +1,7 @@
 import { useReducer } from "react";
-import { TYPES } from "@/reducer/actions";
-import { initialState } from "@/reducer/initialState";
-import { reducer } from "@/reducer/reducer";
+import { TYPES } from "@/reducer_contador/actions";
+import { initialState } from "@/reducer_contador/initialState";
+import { reducer } from "@/reducer_contador/reducer";
 
 const {INCREMENTAR, DECREMENTAR, RESETEAR, MANEJAR_VISIBILIDAD} = TYPES;
 // Cada dispatch despacha un objeto llamado "action"
