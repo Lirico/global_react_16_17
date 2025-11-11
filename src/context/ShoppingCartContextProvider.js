@@ -14,7 +14,13 @@ const ShoppingCartContextProvider = ({children}) => {
 
   const addToCart = (id) => dispatch({type: TYPES.ADD_TO_CART, payload: id})
 
-  const deleteFromCart = (id) => dispatch({types: TYPES.REMOVE_ONE_ITEM, payload: id})
+  const deleteFromCart = (id, all = false) => {
+    if (all) {
+      dispatch({type: TYPES.REMOVE_ALL_ITEMS, payload: id})
+    } else {
+      dispatch({type: TYPES.REMOVE_ONE_ITEM, payload: id})
+    }
+  }
 
   const value = {
     state,
@@ -28,3 +34,6 @@ const ShoppingCartContextProvider = ({children}) => {
   )
 }
 export default ShoppingCartContextProvider;
+
+
+

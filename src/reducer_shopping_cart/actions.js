@@ -7,3 +7,4 @@ export const TYPES = {
     // Eliminar un item independientemente de la cantidad
     REMOVE_ALL_ITEMS: "REMOVE_ALL_ITEMS"
 }
+

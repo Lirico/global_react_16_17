@@ -1,5 +1,5 @@
-import ShoppingCart from "@/components/clase_07/ShoppingCart";
-import ShoppingCartContextProvider from "@/context/ShoppingCartContextProvider";
+
+import FrasesApp from "@/components/clase_08/FrasesApp";
 
 
 
@@ -8,9 +8,7 @@ import ShoppingCartContextProvider from "@/context/ShoppingCartContextProvider";
 export default function Home() {
   return (
     <>
-      <ShoppingCartContextProvider>
-        <ShoppingCart/>
-      </ShoppingCartContextProvider>
+      <FrasesApp />
     </>
   );
 }
